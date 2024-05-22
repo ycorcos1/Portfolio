@@ -7,6 +7,7 @@ import moviebud from "../assets/project-pictures/moviebud.jpg";
 import liveball from "../assets/project-pictures/liveball.jpg";
 import terraform from "../assets/project-pictures/terraform.jpg";
 import nlp from "../assets/project-pictures/nlp.jpg";
+import bankJDBC from "../assets/project-pictures/bankJDBC.png";
 
 export const ProjectList = [
   {
@@ -38,22 +39,13 @@ export const ProjectList = [
     website: "http://liveball.s3-website.us-east-2.amazonaws.com/",
   },
   {
-    name: "NLP Text Summarizer",
-    image: nlp,
-    skills: "Python, NLP, NLTK",
-    sourcecode: "https://github.com/ycorcos1/NLP_Text_Summarizer/tree/main",
+    name: "Bank JDBC",
+    image: bankJDBC,
+    skills: "Java, Windows Builder, PostgreSQL, Spring JDBC, Maven",
+    sourcecode: "https://github.com/ycorcos1/Bank-JDBC",
     description:
-      "Basic Python script that using NLTK to summarize text from an input file",
+      "Implemented a basic banking system that allows users to create accounts and login to view their balances. Users are able to withdraw money, deposit money, change username or password, and delete their accounts entirely. Users will also be able to see the most recent transactions for their account. Used a DAO to get, receive and update data from the database and Windows Builder to design the GUI.",
     website: "",
-  },
-  {
-    name: "Wordle Clone",
-    image: wordleclone,
-    skills: "React, Node.JS, JavaScript, HTML, CSS",
-    sourcecode: "https://github.com/ycorcos1/Wordle-Clone",
-    description:
-      "Created a clone of the NYTimes puzzle, Wordle, using JavaScript and the React framework to mimic the display and functions of Wordle. Hosted the website on AWS using Amazon S3 with enabled static websites capabilities.",
-    website: "http://react-wordle-clone.s3-website-us-east-1.amazonaws.com/",
   },
   {
     name: "News4Us",
@@ -72,6 +64,24 @@ export const ProjectList = [
     description:
       "I compiled a list of the top rated movies using the MovieDB API. This application allows the user to enter between 1 and 10 movies they would like to be generated randomly from the list. This simple but fun project was created to help me, and other users, find a movie to watch if I cannot think of one and do not feel like surfing the internet to find one. Instead, with the click of a button I can generate between 1 and 10 ideas, or keep doing so until I find a movie that I am interested in. I created this app using React, JavaScript, CSS and HTML and hosted this static website in an S3 bucket in AWS.",
     website: "http://moviebud.s3-website-us-east-1.amazonaws.com/",
+  },
+  {
+    name: "Wordle Clone",
+    image: wordleclone,
+    skills: "React, Node.JS, JavaScript, HTML, CSS",
+    sourcecode: "https://github.com/ycorcos1/Wordle-Clone",
+    description:
+      "Created a clone of the NYTimes puzzle, Wordle, using JavaScript and the React framework to mimic the display and functions of Wordle. Hosted the website on AWS using Amazon S3 with enabled static websites capabilities.",
+    website: "http://react-wordle-clone.s3-website-us-east-1.amazonaws.com/",
+  },
+  {
+    name: "NLP Text Summarizer",
+    image: nlp,
+    skills: "Python, NLP, NLTK",
+    sourcecode: "https://github.com/ycorcos1/NLP_Text_Summarizer/tree/main",
+    description:
+      "Basic Python script that using NLTK to summarize text from an input file",
+    website: "",
   },
   {
     name: "Sudoku",
