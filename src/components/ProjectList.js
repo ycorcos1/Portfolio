@@ -48,6 +48,15 @@ export const ProjectList = [
     website: "",
   },
   {
+    name: "MovieBud",
+    image: moviebud,
+    skills: "React, Node.JS, JavaScript, HTML, CSS, TheMovieDB API",
+    sourcecode: "https://github.com/ycorcos1/MovieBud",
+    description:
+      "This app is meant to help users find a movie to watch when they are stuck. This app was created using React and interacts with The Movie DB (TMDB) API. Users can select genres to filter out a movie if they choose, once they generate, a movie is displayed along with its poster, overview, release dates, genres, and ratings. Users can also go back to edit the filters or generate another movie using the same filters. This website is hosted as a static website on AWS using S3 buckets",
+    website: "http://moviebud.s3-website-us-east-1.amazonaws.com",
+  },
+  {
     name: "News4Us",
     image: news4us,
     skills: "React, Node.JS, JavaScript, HTML, CSS, NewsAPI",
@@ -55,15 +64,6 @@ export const ProjectList = [
     description:
       "Developed a static website that displays news articles based on the users input. The user can either search from articles containing specific keywords or get the most recent breaking news. The website was built with JavaScript and the React framework and by interacting with the NewsAPI.",
     website: "",
-  },
-  {
-    name: "Movie Bud",
-    image: moviebud,
-    skills: "React, Node.JS, JavaScript, HTML, CSS, TheMovieDB API",
-    sourcecode: "https://github.com/ycorcos1/Movie_Bud",
-    description:
-      "I compiled a list of the top rated movies using the MovieDB API. This application allows the user to enter between 1 and 10 movies they would like to be generated randomly from the list. This simple but fun project was created to help me, and other users, find a movie to watch if I cannot think of one and do not feel like surfing the internet to find one. Instead, with the click of a button I can generate between 1 and 10 ideas, or keep doing so until I find a movie that I am interested in. I created this app using React, JavaScript, CSS and HTML and hosted this static website in an S3 bucket in AWS.",
-    website: "http://moviebud.s3-website-us-east-1.amazonaws.com/",
   },
   {
     name: "Wordle Clone",
