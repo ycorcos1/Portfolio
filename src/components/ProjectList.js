@@ -62,8 +62,8 @@ export const ProjectList = [
     skills: "React, Node.JS, JavaScript, HTML, CSS, NewsAPI",
     sourcecode: "https://github.com/ycorcos1/News4Us",
     description:
-      "Developed a static website that displays news articles based on the users input. The user can either search from articles containing specific keywords or get the most recent breaking news. The website was built with JavaScript and the React framework and by interacting with the NewsAPI.",
-    website: "",
+      "This application interacts with the News API. Users can select to receive the most recent news pertaining to a certain subject or using keywords. The website is hosted as a static website on AWS using S3 buckets and incorporates Routers.",
+    website: "http://news4us.s3-website-us-east-1.amazonaws.com",
   },
   {
     name: "Wordle Clone",
