@@ -1,26 +1,36 @@
-import { Routes, Route } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Error from "./pages/Error";
-import DisplayProject from "./pages/DisplayProject";
+import LoadingPage from "./pages/LoadingPage";
+
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
+const About = lazy(() => import("./pages/About"));
+const Error = lazy(() => import("./pages/Error"));
+const DisplayProject = lazy(() => import("./pages/DisplayProject"));
+const Confirmation = lazy(() => import("./pages/Confirmation"));
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/project/:id" element={<DisplayProject />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <Suspense fallback={<LoadingPage />}>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<DisplayProject />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/confirmation" element={<Confirmation />} />
+          <Route path="/error" element={<Error />} />
+          <Route path="*" element={<Navigate to="/error" replace />} />
+          <Route path="/loading" element={<LoadingPage />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   );

@@ -5,32 +5,26 @@ import sudoku from "../assets/project-pictures/sudoku.jpg";
 import awsportfoliodiagram from "../assets/project-pictures/portfolioawsdiagram.jpg";
 import moviebud from "../assets/project-pictures/moviebud.jpg";
 import liveball from "../assets/project-pictures/liveball.jpg";
-import terraform from "../assets/project-pictures/terraform.jpg";
 import nlp from "../assets/project-pictures/nlp.jpg";
 import bankJDBC from "../assets/project-pictures/bankJDBC.png";
 
 export const ProjectList = [
   {
     name: "My Portfolio Website",
+    slug: "portfolio-website",
     image: awsportfoliodiagram,
     skills:
       "React, Node.JS, JavaScript, HTML, CSS, Amazon Route 53, AWS CloudFront, AWS Certificate Manager, Amazon S3",
     sourcecode: "https://github.com/ycorcos1/Portfolio",
     description:
-      "Designed an online personal portfolio static website that allows users from all over the world to view my past experiences and projects. Front-end development using the React framework with added MUI components. Used AWS to host the website and deliver content using AWS CloudFront, Amazon S3 and Amazon Route 53.",
-    website: "",
-  },
-  {
-    name: "Terraform Website Deployment",
-    image: terraform,
-    skills: "Terraform, AWS, AWS S3, Amazon CloudFront",
-    sourcecode:
+      "Designed an online personal portfolio static website that allows users from all over the world to view my past experiences and projects. Front-end development using the React framework with added MUI components. Used AWS to host the website and deliver content using AWS CloudFront, Amazon S3 and Amazon Route 53. Deployed to AWS using Terraform",
+    sourcecode2:
       "https://github.com/ycorcos1/Terraform-Static-Website-Deployment",
-    description: "Deployed a static React website to AWS using Terraform",
-    website: "",
+    sourcecode2_name: "Click To See Terraform Source Code",
   },
   {
     name: "LiveBall",
+    slug: "liveball",
     image: liveball,
     skills: "Chrome Developer Tools, JavaScript, HTML, Web API (api-sports)",
     sourcecode: "https://github.com/ycorcos1/LiveBall/tree/main",
@@ -40,15 +34,16 @@ export const ProjectList = [
   },
   {
     name: "Bank JDBC",
+    slug: "bank-jdbc",
     image: bankJDBC,
     skills: "Java, Windows Builder, PostgreSQL, Spring JDBC, Maven",
     sourcecode: "https://github.com/ycorcos1/Bank-JDBC",
     description:
       "Implemented a basic banking system that allows users to create accounts and login to view their balances. Users are able to withdraw money, deposit money, change username or password, and delete their accounts entirely. Users will also be able to see the most recent transactions for their account. Used a DAO to get, receive and update data from the database and Windows Builder to design the GUI.",
-    website: "",
   },
   {
     name: "MovieBud",
+    slug: "moviebud",
     image: moviebud,
     skills: "React, Node.JS, JavaScript, HTML, CSS, TheMovieDB API",
     sourcecode: "https://github.com/ycorcos1/MovieBud",
@@ -57,7 +52,8 @@ export const ProjectList = [
     website: "http://moviebud.s3-website-us-east-1.amazonaws.com",
   },
   {
-    name: "News4Us",
+    name: "News 4 Us",
+    slug: "news-4-us",
     image: news4us,
     skills: "React, Node.JS, JavaScript, HTML, CSS, NewsAPI",
     sourcecode: "https://github.com/ycorcos1/News4Us",
@@ -67,6 +63,7 @@ export const ProjectList = [
   },
   {
     name: "Wordle Clone",
+    slug: "wordle-clone",
     image: wordleclone,
     skills: "React, Node.JS, JavaScript, HTML, CSS",
     sourcecode: "https://github.com/ycorcos1/Wordle-Clone",
@@ -76,29 +73,29 @@ export const ProjectList = [
   },
   {
     name: "NLP Text Summarizer",
+    slug: "nlp-text-summarizer",
     image: nlp,
     skills: "Python, NLP, NLTK",
     sourcecode: "https://github.com/ycorcos1/NLP_Text_Summarizer/tree/main",
     description:
       "Basic Python script that using NLTK to summarize text from an input file",
-    website: "",
   },
   {
     name: "Sudoku",
+    slug: "sudoku",
     image: sudoku,
     skills: "Java, Java GUI Window Builder",
     sourcecode: "https://github.com/ycorcos1/sudoku",
     description:
       "Developed my own version of one of my favorite games, Sudoku, in Java that allows users to choose between three difficulties and solve a sudoku board by using preset boards for each difficulty and randomly choosing a board for the user to solve. Expedited designing the GUI by using the Windows Builder extension on the Eclipse IDE.",
-    website: "",
   },
   {
     name: "Tic Tac Toe",
+    slug: "tic-tac-toe",
     image: tictactoe,
     skills: "Eclipse, Java, Windows Builder",
     sourcecode: "https://github.com/ycorcos1/TicTacToe",
     description:
       "Created a personal desktop game application using Java that allows users to play a simple game of tic tac toe against the computer or against another player. Expedited designing the GUI by using the Windows Builder extension on the Eclipse IDE.",
-    website: "",
   },
 ];

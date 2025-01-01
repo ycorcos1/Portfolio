@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import { GitHub, Instagram } from "@mui/icons-material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 function Footer() {
   return (
@@ -15,13 +15,14 @@ function Footer() {
         </a>
         <a
           rel="noopener noreferrer"
-          href="http://instagram.com/ycorcos26"
+          href="http://linkedin.com/in/yahav-corcos"
           target="_blank"
         >
-          <Instagram />
+          <LinkedIn />
         </a>
       </div>
       <p> &copy; 2023 yahavcorcos.com</p>
+      <p>Designed by Yahav Corcos.</p>
     </div>
   );
 }

@@ -5,14 +5,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: monospace;
 }
 
 .about h2{
   color: white;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: 85px;
   line-height: 0.75em;
   text-align: center;
   text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
@@ -20,7 +19,6 @@
     6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
     6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
     9px 7px 1px #4af7ff;
-  font-size: 85px;
   margin-bottom: 3rem;
 }
 
@@ -37,7 +35,6 @@
   display: flex;
   width: 70%;
   font-size: 20px;
-  font-family: monospace;
   color: white;
   flex-direction: row;
   flex-wrap: wrap;
@@ -52,18 +49,18 @@
 }
 
 .summary a{
-  color: white;
-  font-size: medium;
+  color: #4af7ff;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .summary a:hover{
-  color: #4af7ff;
+  color: #afffff;
   cursor: pointer;
 }
 
 .skills{
   margin: 0;
-  font-size: 35px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -80,7 +77,6 @@
 .skills h3{
   color: white;
   font-size: 24px;
-  font-family: monospace;
   text-shadow: 5px 5px 5px rgb(20,20,20);
 }
 
@@ -90,16 +86,16 @@
 }
 
 .skills a{
-  font-family: monospace;
-  font-size: medium;
-  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4af7ff;
   background: transparent;
   border: none;
   padding: 10px;
 }
 
 .skills a:hover{
-  color: #4af7ff;
+  color: #afffff;
   cursor: pointer;
 }
 
@@ -116,7 +112,6 @@
 .languages h3{
   color: white;
   font-size: 24px;
-  font-family: monospace;
   text-shadow: 5px 5px 5px rgb(20,20,20);
 }
 
@@ -125,14 +120,12 @@
 }
 
 .language{
-  /* overflow: hidden; */
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: medium;
-  font-family: monospace;
   color: white;
   border-radius: 2rem;
   background: linear-gradient(45deg, #4af7ff, darkblue, purple, darkorchid);
@@ -162,7 +155,6 @@
   justify-content: center;
   flex-direction: column;
   font-size: medium;
-  font-family: monospace;
   color: white;
   border-radius: 2rem;
   background: linear-gradient(45deg, #4af7ff, darkblue, purple, darkorchid);
@@ -187,7 +179,6 @@
 
 .relevantcourses h2{
   font-size: 35px;
-  font-family: monospace;
 }
 
 .container{

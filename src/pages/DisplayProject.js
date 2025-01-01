@@ -1,28 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../components/ProjectList";
 import "../styles/DisplayProject.css";
 
 function DisplayProject() {
-  const { id } = useParams();
-  const project = ProjectList[id];
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  const { slug } = useParams();
+  const project = ProjectList.find((p) => p.slug === slug);
   return (
     <div className="displayproject">
       <h2>{project.name}</h2>
       <img src={project.image} alt={project.name} />
       <a href={project.sourcecode} target="_blank" rel="noreferrer">
-        Source Code
+        Click To View Source Code
       </a>
-      {project.website !== "" ? (
+      {project.website && (
         <a href={project.website} target="_blank" rel="noreferrer">
-          Check It Out!
+          Click To Check It Out!
         </a>
-      ) : undefined}
+      )}
       <p>
         <b>Skills: </b>
         {project.skills}
       </p>
       <p>{project.description}</p>
+      {project.sourcecode2 && (
+        <a href={project.sourcecode2} target="_blank" rel="noreferrer">
+          {project.sourcecode2_name}
+        </a>
+      )}
     </div>
   );
 }

@@ -21,14 +21,12 @@
     opacity: 0;
     top: 0;
     color: white;
-    font-family: monospace;
     font-size: medium;
     text-align: left;
 }
 
 .course div:nth-of-type(1) h5{
     color: #4af7ff;
-    font-family: monospace;
     font-size: large;
 }
 
@@ -70,7 +68,6 @@
 }
 .course div:nth-of-type(3) h3{
     margin-top: 5px;
-    font-family: monospace;
     font-size: large;
     color: white;
 }

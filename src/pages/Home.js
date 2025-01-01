@@ -11,7 +11,9 @@ function Home() {
           <p>Software Developer and Cloud Practitioner</p>
         </div>
         <Link to="/contact">
-          <button className="button">Contact Me {">"}</button>
+          <button className="contactmebtn">
+            <span>Contact Me</span>
+          </button>
         </Link>
       </div>
     </div>

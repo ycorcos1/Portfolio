@@ -1,0 +1,35 @@
+/* LoadingPage.css */
+.loading-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3; /* Light gray border */
+    border-top: 5px solid #4af7ff;
+    border-radius: 50%; /* Makes it a circle */
+    animation: spin 1s linear infinite; /* Spinning animation */
+    margin-bottom: 1rem; /* Space between spinner and text */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  

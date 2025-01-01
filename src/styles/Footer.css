@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.socialmedia svg:hover {
+  color: #4af7ff;
+}
+
 .footer p {
   color: white;
 }
