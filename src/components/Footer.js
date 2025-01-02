@@ -22,7 +22,9 @@ function Footer() {
         </a>
       </div>
       <p> &copy; 2023 yahavcorcos.com</p>
-      <p>Designed by Yahav Corcos.</p>
+      <p>
+        Designed by <b>Yahav Corcos.</b>
+      </p>
     </div>
   );
 }

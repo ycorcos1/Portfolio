@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/About.css";
 import { Abstract } from "../components/Abstract";
 import awsbadge from "../assets/awsbadge.jpg";
@@ -11,7 +11,18 @@ import { LanguageList } from "../components/LanguageList";
 import Language from "../components/Language";
 import degreePDF from "../assets/degree.pdf";
 
-function Resume() {
+function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="about">
       <h2>About Me</h2>
@@ -64,8 +75,11 @@ function Resume() {
           })}
         </div>
       </div>
+      <button className="back-to-top" onClick={scrollToTop}>
+        Back to Top
+      </button>
     </div>
   );
 }
 
-export default Resume;
+export default About;

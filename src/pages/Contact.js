@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
@@ -7,6 +7,10 @@ function Contact() {
   const formRef = useRef();
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,7 +25,6 @@ function Contact() {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
 
-    // Validate fields
     if (!name) {
       alert("Please enter your name.");
       return;

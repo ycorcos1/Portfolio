@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <div className="home">
       <div className="title">

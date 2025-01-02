@@ -1,15 +1,22 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ProjectList } from "../components/ProjectList";
 import "../styles/DisplayProject.css";
 
 function DisplayProject() {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   }, []);
 
   const { slug } = useParams();
+  const navigate = useNavigate();
   const project = ProjectList.find((p) => p.slug === slug);
+
+  const handleBackToProjects = () => {
+    navigate("/projects");
+    window.scrollTo({ top: 0 });
+  };
+
   return (
     <div className="displayproject">
       <h2>{project.name}</h2>
@@ -32,6 +39,12 @@ function DisplayProject() {
           {project.sourcecode2_name}
         </a>
       )}
+      <button
+        onClick={handleBackToProjects} // Call the function to navigate and scroll
+        className="back-to-projects-button"
+      >
+        Back to Projects
+      </button>
     </div>
   );
 }

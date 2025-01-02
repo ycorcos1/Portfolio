@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Project from "../components/Project";
 import { ProjectList } from "../components/ProjectList";
 import "../styles/Projects.css";
 import { ClassProjectsList } from "../components/ClassProjectsList";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="projects">
       <h2>Projects</h2>
@@ -30,6 +41,9 @@ function Projects() {
           );
         })}
       </div>
+      <button className="back-to-top" onClick={scrollToTop}>
+        Back to Top
+      </button>
     </div>
   );
 }
