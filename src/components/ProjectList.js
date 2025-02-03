@@ -6,7 +6,9 @@ import awsportfoliodiagram from "../assets/project-pictures/portfolioawsdiagram.
 import moviebud from "../assets/project-pictures/moviebud.jpg";
 import liveball from "../assets/project-pictures/liveball.jpg";
 import nlp from "../assets/project-pictures/nlp.jpg";
-import bankJDBC from "../assets/project-pictures/bankJDBC.png";
+import bankJDBC from "../assets/project-pictures/bankJDBC.jpg";
+import smartsummarizer from "../assets/project-pictures/smartsummarizer.jpg";
+import factverse from "../assets/project-pictures/factverse.jpg";
 
 export const ProjectList = [
   {
@@ -31,6 +33,26 @@ export const ProjectList = [
     description:
       "Independently built a Google Chrome extension that displays the current day’s NBA games with live score updates. This extension uses JavaScript to interact with the Basketball-API from API-SPORTS and format the data that was fetched from the API to display the results when the user clicks on the extension.",
     website: "http://liveball.s3-website.us-east-2.amazonaws.com/",
+  },
+  {
+    name: "SmartSummarizer",
+    slug: "smartsummarizer",
+    image: smartsummarizer,
+    skills: "React, Node.js, JavaScript, HTML, CSS, Vercel, Hugging Face API",
+    sourcecode: "https://github.com/ycorcos1/Smart-Summarizer",
+    description:
+      "SmartSummarizer is an AI-powered text summarization tool that extracts key insights from long-form text using Hugging Face's NLP models. Designed to improve efficiency and comprehension, the app allows users to generate concise summaries instantly. Built with React.js, it features a clean, responsive UI with support for copying summaries to the clipboard and downloading them as PDFs. The application is integrated with the Hugging Face Transformers API for advanced text processing and is deployed on Vercel for seamless accessibility.",
+    website: "https://smart-summarizer-ten.vercel.app",
+  },
+  {
+    name: "FactVerse",
+    slug: "factverse",
+    image: factverse,
+    skills: "React, Node.js, JavaScript, HTML, CSS, Vercel, Useless Facts API",
+    sourcecode: "https://github.com/ycorcos1/factverse",
+    description:
+      "FactVerse is a fun and educational web app that delivers insightful and thought-provoking facts every day. Unlike traditional fact generators, FactVerse provides meaningful information that expands knowledge in an engaging way. Built with React.js, it fetches data from the Useless Facts API and features a modern, minimalist design with a user-friendly interface. The app supports dark mode for improved readability, allows users to copy facts to the clipboard, and offers the option to generate multiple facts per day. Deployed on Vercel, FactVerse is optimized for speed and accessibility.",
+    website: "https://factverse.vercel.app",
   },
   {
     name: "Bank JDBC",
