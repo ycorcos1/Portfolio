@@ -10,4 +10,5 @@ Explore the live version of the portfolio at [www.yahavcorcos.com](https://www.y
 
 - **React Framework**: Built with React for a dynamic and responsive user experience.
 - **MUI Components**: Utilized Material-UI (MUI) for sleek and modern design elements.
+- **EmailJS Integration**: Enables visitors to contact me directly via the website without backend setup.
 - **AWS Hosting**: Deployed using AWS services, including CloudFront, Amazon S3, and Amazon Route 53, ensuring fast and reliable content delivery.
