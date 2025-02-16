@@ -9,6 +9,7 @@ import nlp from "../assets/project-pictures/nlp.jpg";
 import bankJDBC from "../assets/project-pictures/bankJDBC.jpg";
 import smartsummarizer from "../assets/project-pictures/smartsummarizer.jpg";
 import factverse from "../assets/project-pictures/factverse.jpg";
+import trackmyjob from "../assets/project-pictures/trackmyjob.jpg"
 
 export const ProjectList = [
   {
@@ -16,13 +17,22 @@ export const ProjectList = [
     slug: "portfolio-website",
     image: awsportfoliodiagram,
     skills:
-      "React, Node.JS, JavaScript, HTML, CSS, Amazon Route 53, AWS CloudFront, AWS Certificate Manager, Amazon S3",
+      "React.js, Node.JS, JavaScript, HTML, CSS, Amazon Route 53, AWS CloudFront, AWS Certificate Manager, Amazon S3",
     sourcecode: "https://github.com/ycorcos1/Portfolio",
     description:
       "Designed an online personal portfolio static website that allows users from all over the world to view my past experiences and projects. Front-end development using the React framework with added MUI components. Used AWS to host the website and deliver content using AWS CloudFront, Amazon S3 and Amazon Route 53. Deployed to AWS using Terraform",
     sourcecode2:
       "https://github.com/ycorcos1/Terraform-Static-Website-Deployment",
     sourcecode2_name: "Click To See Terraform Source Code",
+  },
+  {
+    name: "TrackMyJob",
+    slug: "trackmyjob",
+    image: trackmyjob,
+    skills: "React.js, JavaScript, HTML, CSS, Node.js, Express.js, PostgreSQL (NeonDB), Vercel, JSON Web Token, bcrypt.js, React Context API",
+    sourcecode: "https://github.com/ycorcos1/job-tracker",
+    description: "TrackMyJob is a full-stack job application tracker designed to help users manage and organize their job search process. Users can create an account, log in securely, and track their job applications with details such as job title, company name, application date, status, and job source. The app features real-time database storage using PostgreSQL (NeonDB), authentication with JWT, and a responsive user interface built with React.js. The application is deployed using Vercel for seamless and fast performance. TrackMyJob provides a structured way for job seekers to monitor their application history, update application statuses, and optimize their job search efforts in an easy-to-use web platform.",
+    website: "https://job-tracker-wine.vercel.app/login"
   },
   {
     name: "LiveBall",
@@ -48,7 +58,7 @@ export const ProjectList = [
     name: "FactVerse",
     slug: "factverse",
     image: factverse,
-    skills: "React, Node.js, JavaScript, HTML, CSS, Vercel, Useless Facts API",
+    skills: "React.js, Node.js, JavaScript, HTML, CSS, Vercel, Useless Facts API",
     sourcecode: "https://github.com/ycorcos1/factverse",
     description:
       "FactVerse is a fun and educational web app that delivers insightful and thought-provoking facts every day. Unlike traditional fact generators, FactVerse provides meaningful information that expands knowledge in an engaging way. Built with React.js, it fetches data from the Useless Facts API and features a modern, minimalist design with a user-friendly interface. The app supports dark mode for improved readability, allows users to copy facts to the clipboard, and offers the option to generate multiple facts per day. Deployed on Vercel, FactVerse is optimized for speed and accessibility.",
@@ -67,7 +77,7 @@ export const ProjectList = [
     name: "MovieBud",
     slug: "moviebud",
     image: moviebud,
-    skills: "React, Node.JS, JavaScript, HTML, CSS, TheMovieDB API",
+    skills: "React.js, Node.JS, JavaScript, HTML, CSS, TheMovieDB API",
     sourcecode: "https://github.com/ycorcos1/MovieBud",
     description:
       "This app is meant to help users find a movie to watch when they are stuck. This app was created using React and interacts with The Movie DB (TMDB) API. Users can select genres to filter out a movie if they choose, once they generate, a movie is displayed along with its poster, overview, release dates, genres, and ratings. Users can also go back to edit the filters or generate another movie using the same filters. This website is hosted as a static website on AWS using S3 buckets",
@@ -77,7 +87,7 @@ export const ProjectList = [
     name: "News 4 Us",
     slug: "news-4-us",
     image: news4us,
-    skills: "React, Node.JS, JavaScript, HTML, CSS, NewsAPI",
+    skills: "React.js, Node.JS, JavaScript, HTML, CSS, NewsAPI",
     sourcecode: "https://github.com/ycorcos1/News4Us",
     description:
       "This application interacts with the News API. Users can select to receive the most recent news pertaining to a certain subject or using keywords. The website is hosted as a static website on AWS using S3 buckets and incorporates Routers.",
@@ -87,7 +97,7 @@ export const ProjectList = [
     name: "Wordle Clone",
     slug: "wordle-clone",
     image: wordleclone,
-    skills: "React, Node.JS, JavaScript, HTML, CSS",
+    skills: "React.js, Node.JS, JavaScript, HTML, CSS",
     sourcecode: "https://github.com/ycorcos1/Wordle-Clone",
     description:
       "Created a clone of the NYTimes puzzle, Wordle, using JavaScript and the React framework to mimic the display and functions of Wordle. Hosted the website on AWS using Amazon S3 with enabled static websites capabilities.",
