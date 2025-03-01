@@ -9,7 +9,8 @@ import nlp from "../assets/project-pictures/nlp.jpg";
 import bankJDBC from "../assets/project-pictures/bankJDBC.jpg";
 import smartsummarizer from "../assets/project-pictures/smartsummarizer.jpg";
 import factverse from "../assets/project-pictures/factverse.jpg";
-import trackmyjob from "../assets/project-pictures/trackmyjob.jpg"
+import trackmyjob from "../assets/project-pictures/trackmyjob.jpg";
+import dreamweaver_mvp from "../assets/project-pictures/dreamweaver_mvp.jpg";
 
 export const ProjectList = [
   {
@@ -29,10 +30,12 @@ export const ProjectList = [
     name: "TrackMyJob",
     slug: "trackmyjob",
     image: trackmyjob,
-    skills: "React.js, JavaScript, HTML, CSS, Node.js, Express.js, PostgreSQL (NeonDB), Vercel, JSON Web Token, bcrypt.js, React Context API",
+    skills:
+      "React.js, JavaScript, HTML, CSS, Node.js, Express.js, PostgreSQL (NeonDB), Vercel, JSON Web Token, bcrypt.js, React Context API",
     sourcecode: "https://github.com/ycorcos1/job-tracker",
-    description: "TrackMyJob is a full-stack job application tracker designed to help users manage and organize their job search process. Users can create an account, log in securely, and track their job applications with details such as job title, company name, application date, status, and job source. The app features real-time database storage using PostgreSQL (NeonDB), authentication with JWT, and a responsive user interface built with React.js. The application is deployed using Vercel for seamless and fast performance. TrackMyJob provides a structured way for job seekers to monitor their application history, update application statuses, and optimize their job search efforts in an easy-to-use web platform.",
-    website: "https://job-tracker-wine.vercel.app/login"
+    description:
+      "TrackMyJob is a full-stack job application tracker designed to help users manage and organize their job search process. Users can create an account, log in securely, and track their job applications with details such as job title, company name, application date, status, and job source. The app features real-time database storage using PostgreSQL (NeonDB), authentication with JWT, and a responsive user interface built with React.js. The application is deployed using Vercel for seamless and fast performance. TrackMyJob provides a structured way for job seekers to monitor their application history, update application statuses, and optimize their job search efforts in an easy-to-use web platform.",
+    website: "https://job-tracker-wine.vercel.app/login",
   },
   {
     name: "LiveBall",
@@ -43,6 +46,16 @@ export const ProjectList = [
     description:
       "Independently built a Google Chrome extension that displays the current day’s NBA games with live score updates. This extension uses JavaScript to interact with the Basketball-API from API-SPORTS and format the data that was fetched from the API to display the results when the user clicks on the extension.",
     website: "http://liveball.s3-website.us-east-2.amazonaws.com/",
+  },
+  {
+    name: "DreamWeaver AI (MVP)",
+    slug: "dreamweaver-ai-mvp",
+    image: dreamweaver_mvp,
+    skills: "React.js, JavaScript, HTML, CSS, Vercel, RapidAPI",
+    sourcecode: "https://github.com/ycorcos1/dreamweaver-ai-mvp",
+    description:
+      "DreamWeaver AI is an AI-powered image generation web application that allows users to create stunning AI-generated images based on text prompts. This MVP version focuses on the core functionality of AI image generation and downloading images. Built with React.js and integrated with a text-to-image API, the application provides a smooth and intuitive user experience. Future updates will include personalized galleries, login/signup features, and a favorites system.",
+    website: "https://dreamweaver-ai-mvp.vercel.app/",
   },
   {
     name: "SmartSummarizer",
@@ -58,7 +71,8 @@ export const ProjectList = [
     name: "FactVerse",
     slug: "factverse",
     image: factverse,
-    skills: "React.js, Node.js, JavaScript, HTML, CSS, Vercel, Useless Facts API",
+    skills:
+      "React.js, Node.js, JavaScript, HTML, CSS, Vercel, Useless Facts API",
     sourcecode: "https://github.com/ycorcos1/factverse",
     description:
       "FactVerse is a fun and educational web app that delivers insightful and thought-provoking facts every day. Unlike traditional fact generators, FactVerse provides meaningful information that expands knowledge in an engaging way. Built with React.js, it fetches data from the Useless Facts API and features a modern, minimalist design with a user-friendly interface. The app supports dark mode for improved readability, allows users to copy facts to the clipboard, and offers the option to generate multiple facts per day. Deployed on Vercel, FactVerse is optimized for speed and accessibility.",
