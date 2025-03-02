@@ -7,7 +7,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-  
+
 .displayproject h2 {
   color: white;
   font-weight: 900;
@@ -23,15 +23,18 @@
   font-size: 50px;
 }
 
-.displayproject a{
+.displayproject a {
   margin-top: 25px;
   font-size: 1.2rem;
   color: #4af7ff;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.displayproject a:hover{
+.displayproject a:hover {
   color: #afffff;
+  transform: translateY(-2px);
 }
 
 .displayproject img {
@@ -39,7 +42,7 @@
   border-radius: 10px;
 }
 
-.displayproject b{
+.displayproject b {
   color: #4af7ff;
 }
 
@@ -49,10 +52,10 @@
   color: white;
 }
 
-.displayproject p:nth-of-type(2){
+.displayproject p:nth-of-type(2) {
   font-size: large;
   width: 60%;
-  color :#4af7ff;
+  color: #4af7ff;
 }
 
 .displayproject svg {

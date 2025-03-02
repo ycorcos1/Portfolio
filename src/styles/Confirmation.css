@@ -1,49 +1,49 @@
-.confirmation{
-    color: white;
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.confirmation {
+  color: white;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.confirmation h2{
-    color: white;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: clamp(3rem, 10vw, 6rem);
-    line-height: 0.75em;
-    text-align: center;
-    text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
-        3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
-        6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
-        6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
-        9px 7px 1px #4af7ff;
-    font-size: 85px;
+.confirmation h2 {
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+    9px 7px 1px #4af7ff;
+  font-size: 85px;
 }
 
-.confirmation p{
-    font-size: 20px;
-    color: white; 
+.confirmation p {
+  font-size: 20px;
+  color: white;
 }
 
-.confirmation-home{
-    color: #4af7ff;
-    text-decoration: none;
+.confirmation-home {
+  color: #4af7ff;
+  text-decoration: none;
 }
 
-.confirmation-home:hover{
-    color: #afffff;
-    cursor: pointer;
+.confirmation-home:hover {
+  color: #afffff;
+  cursor: pointer;
 }
 
-.confirmation-contact{
-    color: #4af7ff;
-    text-decoration: none;
+.confirmation-contact {
+  color: #4af7ff;
+  text-decoration: none;
 }
 
-.confirmation-contact:hover{
-    color: #afffff;
-    cursor: pointer;
+.confirmation-contact:hover {
+  color: #afffff;
+  cursor: pointer;
 }

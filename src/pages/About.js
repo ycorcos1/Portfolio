@@ -28,7 +28,9 @@ function About() {
       <h2>About Me</h2>
       <div className="summary">
         <div className="abstract">
-          <p>{Abstract}</p>
+          {Abstract.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
           <a href={degreePDF} target="_blank" rel="noreferrer">
             Click To Verify Degree
           </a>

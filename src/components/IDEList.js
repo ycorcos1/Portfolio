@@ -6,6 +6,7 @@ import vscode from "../assets/language-icons/vscode.svg";
 import mysql from "../assets/language-icons/mysql.svg";
 import insomnia from "../assets/language-icons/insomnia.svg";
 import terraform from "../assets/language-icons/terraform.svg";
+import postgresql from "../assets/language-icons/postgresql.svg";
 
 export const IDEList = [
   {
@@ -27,6 +28,10 @@ export const IDEList = [
   {
     name: "Terraform",
     image: terraform,
+  },
+  {
+    name: "PostgreSQL",
+    image: postgresql,
   },
   {
     name: "MySQL",

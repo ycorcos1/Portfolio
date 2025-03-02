@@ -6,8 +6,8 @@ import java from "../assets/language-icons/java.svg";
 
 export const LanguageList = [
   {
-    name: "C++",
-    image: cplusplus,
+    name: "JavaScript",
+    image: javascript,
     years: "3+ Years",
   },
   {
@@ -18,16 +18,16 @@ export const LanguageList = [
   {
     name: "SQL",
     image: sql,
-    years: "2+ Years",
-  },
-  {
-    name: "JavaScript",
-    image: javascript,
-    years: "1+ Years",
+    years: "3+ Years",
   },
   {
     name: "Python",
     image: python,
     years: "1+ Years",
+  },
+  {
+    name: "C++",
+    image: cplusplus,
+    years: "3+ Years",
   },
 ];

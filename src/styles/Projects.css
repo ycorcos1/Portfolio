@@ -8,7 +8,7 @@
   color: white;
 }
 
-.projects h2{
+.projects h2 {
   color: white;
   font-weight: 900;
   text-transform: uppercase;
@@ -48,15 +48,15 @@
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
   text-align: center;
-  background-color: rgb(50,50,50);
+  background-color: rgb(50, 50, 50);
   transition: all 0.4s;
   font-size: 15px;
 }
 
 .project:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transform: scale(1.1, 1.1);
-  background: #4af7ff;
+  /* background: #4af7ff; */
 }
 
 .project .bgImage {
@@ -73,7 +73,7 @@
   font-size: 25px;
 }
 
-.classprojects{
+.classprojects {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,19 +81,22 @@
   flex-wrap: wrap;
 }
 
-.classprojects h3{
+.classprojects h3 {
   font-size: 40px;
+  margin-bottom: 1rem;
 }
 
-.classprojects a{
+.classprojects a {
   color: #4af7ff;
   text-decoration: none;
   font-size: 1.2rem;
   margin: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.classprojects a:hover{
+.classprojects a:hover {
   color: #afffff;
+  transform: translateY(-2px);
 }
 
 .back-to-top {
@@ -114,7 +117,6 @@
 .back-to-top:hover {
   background-color: #0056b3;
 }
-
 
 @media only screen and (max-width: 1300px) {
   .projectList {

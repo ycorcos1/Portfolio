@@ -32,7 +32,7 @@ function Projects() {
         })}
       </div>
       <div className="classprojects">
-        <h3>Class Projects Sources</h3>
+        <h3>Class Projects Source Codes</h3>
         {ClassProjectsList.map((classproject) => {
           return (
             <a href={classproject.sourcecode} target="_blank" rel="noreferrer">
